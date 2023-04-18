@@ -11,7 +11,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     int Nummer;
 
-
+    private TextView textview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,8 @@ public class MainActivity2 extends AppCompatActivity {
         if (extras != null) {
             Namn = extras.getString("name");
             Nummer = extras.getInt("number");
+            textview =findViewById(R.id.textView2);
+            textview.setText(Namn+Nummer);
 
             // Do something with the name and number
         }

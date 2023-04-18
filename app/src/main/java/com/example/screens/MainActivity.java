@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MainActivity2.class));
                 Bengt = new Intent(MainActivity.this, MainActivity2.class);
                 Bengt.putExtra("name", "Arne"); // Optional
-                Bengt.putExtra("number", 55); // Optional
+                Bengt.putExtra("number",  55 ); // Optional
                 startActivity(Bengt);
 
             }
